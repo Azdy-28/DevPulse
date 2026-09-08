@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-ink text-paper font-sans antialiased;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2A3140 transparent;
+}
+
+.card {
+  @apply bg-panel border border-line rounded-md;
+}
+
+.mono-num {
+  @apply font-mono tabular-nums;
+}
